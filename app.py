@@ -8,9 +8,12 @@ parch=st.number_input("Enter your parch",0,5)
 fare=st.number_input("Enter your fare",0,500)
 embarked=st.radio("select your boarding station",["s","c","Q"])
 user_input=[[pclass,gender,age,sibsp,parch,fare,embarked]]
-import pickle
-f=open("pipe1.pkl","rb")
-pipe=pickle.load(f)
+
+import joblib
+pipe = joblib.load("pipe1.pkl")
+# import pickle
+# f=open("pipe1.pkl","rb")
+# pipe=pickle.load(f)
 if st.button("click to predict "):
     res=pipe.predict(user_input)
     st.write(res)
