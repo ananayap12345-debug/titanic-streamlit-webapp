@@ -1,5 +1,5 @@
+joblib
 sklearn
 streamlit
 scikit-learn
 seaborn
-joblib
