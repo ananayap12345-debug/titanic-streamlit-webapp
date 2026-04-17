@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("Titanic Prediction System")
-st.image("https://unsplash.com/photos/a-wave-in-the-ocean-gOHFF6v53qY")
+st.image("a.png")
 pclass=st.number_input("Enter the Passenger Class ",1,2)
 gender=st.radio("select your gender:",["male","female"])
 age=st.number_input("Enter your Age",0,100)
